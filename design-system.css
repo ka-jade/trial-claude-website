@@ -306,8 +306,8 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
    Artwork is a transparent cut-out; soft masks dissolve its left and lower edges into the page. */
 .kj-landing { position: relative; min-height: clamp(560px, 82vh, 860px); overflow: hidden; display: flex; align-items: center; }
 .kj-landing-art { position: absolute; top: 0; bottom: 0; right: -8%; width: 84%; pointer-events: none;
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 18%), linear-gradient(to bottom, transparent 0, #000 8%, #000 84%, transparent 100%); -webkit-mask-composite: source-in;
-  mask-image: linear-gradient(to right, transparent 0, #000 18%), linear-gradient(to bottom, transparent 0, #000 8%, #000 84%, transparent 100%); mask-composite: intersect; }
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 28%), linear-gradient(to bottom, transparent 0, #000 10%, #000 82%, transparent 100%); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0, #000 28%), linear-gradient(to bottom, transparent 0, #000 10%, #000 82%, transparent 100%); mask-composite: intersect; }
 .kj-landing-art .kj-art { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
 .kj-landing-text { position: relative; width: 100%; max-width: calc(32rem + var(--gutter)); padding: var(--space-24) 0 var(--space-24) var(--gutter); display: flex; flex-direction: column; gap: var(--space-8); }
 .kj-landing-title { margin: 0; font-family: var(--font-display); font-weight: 300; font-size: clamp(44px, 5.4vw, 80px); line-height: 1; letter-spacing: -.025em; color: var(--ink); }
