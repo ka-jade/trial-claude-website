@@ -319,7 +319,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 }
 @media (max-width: 820px) {
   .kj-landing { display: block; min-height: 0; }
-  .kj-landing-art { position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 96vw; overflow: hidden;
+  .kj-landing-art { position: relative; top: auto; bottom: auto; right: auto; width: 100%; height: 64vw; overflow: hidden;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 78%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 78%, transparent 100%); }
   .kj-landing-art .kj-art { object-position: 62% 40%; }
   .kj-landing-text { max-width: none; margin-top: calc(-1 * var(--space-6)); padding: 0 var(--gutter) var(--space-12); }
