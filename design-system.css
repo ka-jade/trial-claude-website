@@ -325,5 +325,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
   .kj-landing-text { max-width: none; margin-top: calc(-1 * var(--space-6)); padding: 0 var(--gutter) var(--space-12); }
 }
 
+@media (max-width: 820px) { .kj-systems-interlude { height: var(--space-32); } }
+
 /* ---------- Index section: an eyebrow over a full-width article list ---------- */
 .kj-index > .kj-eyebrow + .kj-articles { margin-top: var(--space-12); }
