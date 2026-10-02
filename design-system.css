@@ -303,7 +303,8 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 
 /* ---------- Landing opening: research-area pages ----------
    Text on the left, one painting bleeding off the right and lower edges.
-   Artwork is a transparent cut-out; soft masks dissolve its left and lower edges into the page. */
+   The Systems Medicine artwork retains its original pale paper ground.
+   Edge masks blend that ground into --paper; do not remove it with color-to-alpha processing. */
 .kj-landing { position: relative; min-height: clamp(560px, 82vh, 860px); overflow: hidden; display: flex; align-items: center; }
 .kj-landing-art { position: absolute; top: 0; bottom: 0; right: -8%; width: 84%; pointer-events: none;
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 28%), linear-gradient(to bottom, transparent 0, #000 10%, #000 82%, transparent 100%); -webkit-mask-composite: source-in;
