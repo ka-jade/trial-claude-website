@@ -1,0 +1,23 @@
+/* Microbiome: page-specific composition; artwork unchanged. */
+.kj-microbiome .micro-opening{position:relative;isolation:isolate;overflow:hidden;min-height:clamp(680px,55vw,860px)}
+.kj-microbiome .micro-text{position:relative;z-index:1;margin-left:var(--gutter);padding-top:clamp(100px,10vw,160px);width:34%;max-width:470px;display:flex;flex-direction:column;gap:32px}
+.kj-microbiome .micro-text h1{font-size:clamp(48px,5.4vw,76px);line-height:1.04}
+.kj-microbiome .micro-art{position:absolute;inset:0;z-index:0;pointer-events:none;mask-image:linear-gradient(to right,transparent 16%,#000 43%),linear-gradient(to bottom,transparent,#000 8%,#000 83%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(to right,transparent 16%,#000 43%),linear-gradient(to bottom,transparent,#000 8%,#000 83%,transparent);-webkit-mask-composite:source-in}
+.kj-microbiome .micro-art img{position:absolute;width:102%;height:auto;right:-7%;bottom:0}
+.kj-microbiome .micro-pause{height:128px}
+.kj-microbiome .micro-note{margin:48px 0 0;font-size:13px;color:var(--ink-faint);max-width:var(--measure-text)}
+@media(min-width:821px) and (max-width:1100px){.kj-microbiome .micro-text{width:40%;padding-top:96px}.kj-microbiome .micro-art img{width:118%;right:-22%}}
+@media(max-width:820px){
+ .kj-microbiome .micro-opening{display:flex;flex-direction:column;min-height:0}
+ .kj-microbiome .micro-text{margin:0;padding:48px var(--gutter) 0;width:100%;max-width:none;gap:24px}
+ .kj-microbiome .micro-text h1{font-size:clamp(44px,8vw,58px)}
+ .kj-microbiome .micro-art{position:relative;inset:auto;flex:none;height:100vw;max-height:650px;margin-top:40px;overflow:hidden;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 86%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 86%,transparent);mask-composite:add;-webkit-mask-composite:source-over}
+ .kj-microbiome .micro-art img{width:195%;height:auto;right:-16%;bottom:auto;top:0}
+ .kj-microbiome .micro-pause{height:96px}
+}
+@media(max-width:340px){.kj-microbiome .micro-pause{height:76px}}
+
+/* Desktop only: keep floating pigment outside the text's quiet territory. */
+@media(min-width:821px){
+ .kj-microbiome .micro-art{mask-image:linear-gradient(to right,transparent 35%,#000 56%),linear-gradient(to bottom,transparent,#000 8%,#000 83%,transparent);-webkit-mask-image:linear-gradient(to right,transparent 35%,#000 56%),linear-gradient(to bottom,transparent,#000 8%,#000 83%,transparent)}
+}
