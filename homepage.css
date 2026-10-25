@@ -1,0 +1,10 @@
+@media (min-width: 821px) {
+  #kj-home .kj-hero > .kj-hero-art {
+    bottom: auto;
+    height: clamp(560px, 78vh, 820px);
+  }
+}
+
+#kj-home-about-copy {
+  text-wrap: pretty;
+}
