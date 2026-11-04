@@ -24,3 +24,44 @@
     transform: translateX(30px);
   }
 }
+
+
+/* Approved Longevity tortoise replacement: exact reviewed cascade. */
+/* Local study, November 3. Original artwork pixels and page geometry retained. */
+.kj-longevity .long-opening{background:var(--paper)}
+.kj-longevity .long-art{mix-blend-mode:darken}
+@media(min-width:821px){
+ .kj-longevity .long-art img{width:78%;bottom:0;
+  mask-image:linear-gradient(to right,transparent,#000 16%),linear-gradient(to bottom,transparent,#000 12%);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 16%),linear-gradient(to bottom,transparent,#000 12%);
+  mask-composite:intersect;-webkit-mask-composite:source-in;
+ }
+ .kj-longevity .long-art{
+  mask-image:linear-gradient(to right,transparent,#000 38%),linear-gradient(to bottom,transparent,#000 16%,#000 78%,transparent);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 38%),linear-gradient(to bottom,transparent,#000 16%,#000 78%,transparent);
+ }
+}
+@media(max-width:820px){
+ .kj-longevity .long-art img{width:112%;right:-6%;top:-4%;bottom:auto;}
+ .kj-longevity .long-art{
+  mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 74%,transparent),linear-gradient(to right,transparent,#000 10%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 74%,transparent),linear-gradient(to right,transparent,#000 10%,#000 92%,transparent);
+  mask-composite:intersect;-webkit-mask-composite:source-in;
+ }
+}
+
+/* Exact attached tortoise, adapted only through image placement and edge masks.
+   Shared page geometry and paper blending remain those of current Option B. */
+@media(min-width:821px){
+ .kj-longevity .long-art img{width:100%;right:0;bottom:0;
+  mask-image:linear-gradient(to bottom,transparent,#000 12%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%);
+ }
+ .kj-longevity .long-art{
+  mask-image:linear-gradient(to right,transparent 20%,#000 42%),linear-gradient(to bottom,transparent,#000 16%,#000 78%,transparent);
+  -webkit-mask-image:linear-gradient(to right,transparent 20%,#000 42%),linear-gradient(to bottom,transparent,#000 16%,#000 78%,transparent);
+ }
+}
+@media(max-width:820px){
+ .kj-longevity .long-art img{width:154%;right:-22%;top:-12%;bottom:auto;}
+}
